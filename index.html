@@ -1,51 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>YourSite.com — Landing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourSite.com</title>
 
   <!-- Google Font: Bebas Neue -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH6f6XQ1Yf7qv4KXr+Z1Z1F2h6QH6g1Kf9e1Y5j5f1Kzq1e6v9z1Q1Yw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <!-- External CSS in css folder -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"/>
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main class="card" role="main">
+
+  <main class="card">
     <header>
       <h1>YourSite</h1>
-      <h2>Your subtitle goes here — concise & centered</h2>
+      <h2>Your subtitle here</h2>
     </header>
 
-    <!-- Quote above social media links -->
     <p class="quote">"Music is the universal language of mankind."</p>
 
-    <ul class="links" aria-label="Social and music links">
+    <ul class="links">
       <li>
-        <a href="https://www.tiktok.com/@yourusername" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="tiktok">
-          <span class="icon"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
-          TikTok
-        </a>
+        <span class="icon"><i class="fa-brands fa-tiktok"></i></span>
+        <a href="https://www.tiktok.com/@yourusername" class="tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
       </li>
       <li>
-        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="instagram">
-          <span class="icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
-          Instagram
-        </a>
+        <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+        <a href="https://www.instagram.com/yourusername" class="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
       </li>
       <li>
-        <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="facebook">
-          <span class="icon"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
-          Facebook
-        </a>
+        <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+        <a href="https://www.facebook.com/yourusername" class="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
       </li>
     </ul>
 
-    <nav class="alt-links" aria-label="Music platforms">
-      <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud">SoundCloud</a>
-      <a href="https://www.mixcloud.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Mixcloud">Mixcloud</a>
+    <nav class="alt-links">
+      <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://www.mixcloud.com/yourusername" target="_blank" rel="noopener noreferrer">Mixcloud</a>
     </nav>
 
     <footer>
@@ -56,5 +52,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
