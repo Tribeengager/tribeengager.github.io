@@ -1,8 +1,9 @@
+/* css/styles.css */
+
 /* Variables */
 :root{
   --bg:#000;
   --text:#fff;
-  --muted:rgba(255,255,255,0.7);
   --accent:rgba(255,255,255,0.06);
   --max-width:900px;
 }
@@ -13,7 +14,7 @@ html,body{height:100%;margin:0}
 body{
   background:var(--bg);
   color:var(--text);
-  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: 'Bebas Neue', cursive, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   display:flex;
@@ -38,8 +39,12 @@ body{
 }
 
 /* Headings */
-h1{
+h1, h2, body, .alt-links a, footer{
   font-family: 'Bebas Neue', cursive;
+  color:var(--text);
+}
+
+h1{
   font-size: clamp(36px, 8vw, 96px);
   line-height:0.9;
   margin:0 0 8px 0;
@@ -50,7 +55,6 @@ h1{
 h2{
   margin:0 0 28px 0;
   font-weight:400;
-  color:var(--muted);
   font-size:18px;
 }
 
@@ -87,7 +91,6 @@ h2{
 /* Music platform links */
 .alt-links{
   margin-top:6px;
-  color:var(--muted);
   font-size:15px;
   display:flex;
   gap:12px;
@@ -99,7 +102,6 @@ h2{
 /* Footer */
 footer{
   margin-top:36px;
-  color:var(--muted);
   font-size:13px;
 }
 
