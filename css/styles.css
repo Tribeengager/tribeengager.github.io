@@ -1,8 +1,113 @@
-h1 {
-  text-align: center;
-  color: white;
- 
+/* Variables */
+:root{
+  --bg:#000;
+  --text:#fff;
+  --muted:rgba(255,255,255,0.7);
+  --accent:rgba(255,255,255,0.06);
+  --max-width:900px;
 }
-body {
-  background-color: black;
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* Card */
+.card{
+  width:100%;
+  max-width:var(--max-width);
+  padding:48px 32px;
+  border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Headings */
+h1{
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(36px, 8vw, 96px);
+  line-height:0.9;
+  margin:0 0 8px 0;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+h2{
+  margin:0 0 28px 0;
+  font-weight:400;
+  color:var(--muted);
+  font-size:18px;
+}
+
+/* Social links */
+.links{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:22px 0 34px 0;
+  list-style:none;
+  padding:0;
+}
+.links li a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,0.08);
+  transition:transform .16s ease, background .16s ease, box-shadow .16s ease;
+  backdrop-filter: blur(4px);
+}
+.links li a .icon{
+  width:22px;height:22px;display:inline-grid;place-items:center;font-size:18px;
+}
+.links li a:hover{
+  transform:translateY(-4px) scale(1.02);
+  box-shadow:0 6px 20px rgba(255,255,255,0.04);
+}
+
+/* Music platform links */
+.alt-links{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:15px;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.alt-links a{color:var(--text);text-decoration:underline;opacity:0.95}
+
+/* Footer */
+footer{
+  margin-top:36px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* FontAwesome icons white */
+.fa-brands, .fa, i[class^="fa-"]{color:var(--text)}
+
+/* Responsive */
+@media (max-width:420px){
+  .links li a{padding:10px 12px}
+  h2{font-size:15px}
 }
