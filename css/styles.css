@@ -42,16 +42,16 @@ h2 { margin: 0 0 28px 0; font-weight: 400; font-size: 18px; }
 /* Social links */
 .links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin: 22px 0 34px 0; list-style: none; padding: 0; }
 .links li { display: flex; flex-direction: column; align-items: center; }
-.links li .icon { font-size: 28px; margin-bottom: 12px; /* increased margin for spacing */ }
+.links li .icon { font-size: 28px; margin-bottom: 16px; /* more space between icon and button */ }
+
+/* Buttons */
 .links li a { display: block; text-align: center; padding: 12px 18px; border-radius: 12px; font-size: 16px; font-weight: 500; min-width: 100px; text-decoration: none; transition: transform .16s ease, box-shadow .16s ease; }
 .links li a:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 6px 20px rgba(255,255,255,0.04); }
-
-/* Specific buttons */
 .links li a.tiktok { background: var(--tiktok-bg); color: var(--tiktok-text); border: 1px solid var(--tiktok-bg); }
 .links li a.instagram, .links li a.facebook { background: transparent; color: var(--text); border: 1px solid var(--text); }
 
-/* Ensure TikTok icon is black */
-.links li a.tiktok + .icon, .links li a.tiktok ~ .icon { color: var(--tiktok-text); }
+/* TikTok icon black */
+.links li .icon i.fa-tiktok { color: var(--tiktok-text); }
 
 /* Music links */
 .alt-links { margin-top: 6px; font-size: 15px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
@@ -65,5 +65,5 @@ footer { margin-top: 36px; font-size: 13px; }
   .links li a { padding: 10px 12px; min-width: 80px; }
   h2 { font-size: 15px; }
   .quote { font-size: 14px; }
-  .links li .icon { font-size: 24px; margin-bottom: 8px; }
+  .links li .icon { font-size: 24px; margin-bottom: 10px; }
 }
