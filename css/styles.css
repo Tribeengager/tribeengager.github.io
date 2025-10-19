@@ -1,18 +1,21 @@
 /* css/styles.css */
 
 :root {
-  --bg: url('background.jpg') no-repeat center center fixed;
+  --bg: fff;
   --text: #fff;
   --tiktok-bg: #fff;
   --tiktok-text: #000;
   --max-width: 900px;
 }
-
 /* Reset & base */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body {
-  background: var(--bg);
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--text);
   font-family: 'Bebas Neue', cursive;
   display: flex;
