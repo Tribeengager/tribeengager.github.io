@@ -6,6 +6,8 @@
   --text:#fff;
   --accent:rgba(255,255,255,0.06);
   --max-width:900px;
+  --tiktok-bg:#fff;
+  --tiktok-text:#000;
 }
 
 /* Reset & base */
@@ -58,6 +60,13 @@ h2{
   font-size:18px;
 }
 
+/* Quote */
+.quote{
+  font-size:16px;
+  font-style:italic;
+  margin-bottom:20px;
+}
+
 /* Social links */
 .links{
   display:flex;
@@ -69,22 +78,34 @@ h2{
   padding:0;
 }
 .links li a{
-  display:inline-flex;
+  display:flex;
+  flex-direction:column;
   align-items:center;
-  gap:10px;
+  justify-content:center;
   padding:12px 18px;
-  border-radius:999px;
+  border-radius:12px;
   text-decoration:none;
-  color:var(--text);
-  border:1px solid rgba(255,255,255,0.08);
+  font-size:16px;
+  font-weight:500;
+  min-width:100px;
   transition:transform .16s ease, background .16s ease, box-shadow .16s ease;
   backdrop-filter: blur(4px);
 }
 .links li a .icon{
-  width:22px;height:22px;display:inline-grid;place-items:center;font-size:18px;
+  font-size:28px;
+  margin-bottom:6px;
+}
+.links li a.tiktok{
+  background:var(--tiktok-bg);
+  color:var(--tiktok-text);
+  border:1px solid var(--tiktok-bg);
+}
+.links li a.instagram, .links li a.facebook{
+  border:1px solid var(--text);
+  color:var(--text);
 }
 .links li a:hover{
-  transform:translateY(-4px) scale(1.02);
+  transform:translateY(-3px) scale(1.02);
   box-shadow:0 6px 20px rgba(255,255,255,0.04);
 }
 
@@ -110,6 +131,8 @@ footer{
 
 /* Responsive */
 @media (max-width:420px){
-  .links li a{padding:10px 12px}
+  .links li a{padding:10px 12px; min-width:80px;}
   h2{font-size:15px}
+  .quote{font-size:14px}
+  .links li a .icon{font-size:24px; margin-bottom:4px;}
 }
