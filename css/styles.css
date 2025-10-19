@@ -39,7 +39,7 @@ body{
 }
 
 /* Headings */
-h1, h2, body, .alt-links a, footer{
+h1, h2, body, .alt-links a, footer, .quote{
   font-family: 'Bebas Neue', cursive;
   color:var(--text);
 }
