@@ -42,7 +42,11 @@ h2 { margin: 0 0 28px 0; font-weight: 400; font-size: 18px; }
 /* Social links */
 .links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin: 22px 0 34px 0; list-style: none; padding: 0; }
 .links li { display: flex; flex-direction: column; align-items: center; }
-.links li .icon { font-size: 28px; margin-bottom: 16px; color: var(--text); } /* icons default white */
+.links li .icon i {
+  color: #fff;      /* wit voor alle iconen, inclusief TikTok */
+  font-size: 28px;
+  margin-bottom: 16px; /* ruimte tussen icoon en button */
+}
 
 /* Buttons */
 .links li a { display: block; text-align: center; padding: 12px 18px; border-radius: 12px; font-size: 16px; font-weight: 500; min-width: 100px; text-decoration: none; transition: transform .16s ease, box-shadow .16s ease; }
@@ -62,5 +66,5 @@ footer { margin-top: 36px; font-size: 13px; }
   .links li a { padding: 10px 12px; min-width: 80px; }
   h2 { font-size: 15px; }
   .quote { font-size: 14px; }
-  .links li .icon { font-size: 24px; margin-bottom: 10px; }
+  .links li .icon i { font-size: 24px; margin-bottom: 10px; }
 }
