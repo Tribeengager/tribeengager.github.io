@@ -1,7 +1,7 @@
 /* css/styles.css */
 
 :root {
-  --bg: #000;
+  --bg: #fff;
   --text: #fff;
   --tiktok-bg: #fff;
   --tiktok-text: #000;
@@ -28,7 +28,7 @@ body {
   max-width: var(--max-width);
   padding: 48px 32px;
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: #000;
   box-shadow: 0 6px 30px rgba(0,0,0,0.6);
   display: flex;
   flex-direction: column;
