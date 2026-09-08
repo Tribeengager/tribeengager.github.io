@@ -123,6 +123,11 @@ h2 { margin: 0 0 10px 0; font-weight: 400; font-size: clamp(16px, 2.5vw, 24px); 
   color: var(--text);
 }
 
+.email-link {
+  color: #444;
+  text-decoration: none;
+}
+
 /* Social links */
 .links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin: 22px 0 34px 0; list-style: none; padding: 0; }
 .links li { display: flex; flex-direction: column; align-items: center; }
