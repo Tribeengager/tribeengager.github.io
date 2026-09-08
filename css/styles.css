@@ -16,7 +16,7 @@ html, body {
 body {
   min-height: 100vh;
   color: var(--text);
-  font-family: 'Bebas Neue', cursive
+  font-family: 'Bebas Neue', cursive;
   text-align: center;
   padding: 40px 20px;
 
