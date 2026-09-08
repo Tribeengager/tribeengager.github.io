@@ -124,7 +124,7 @@ h2 { margin: 0 0 10px 0; font-weight: 400; font-size: clamp(16px, 2.5vw, 24px); 
 }
 
 .email-link {
-  color: #444;
+  color: #ccc;
   text-decoration: none;
 }
 
