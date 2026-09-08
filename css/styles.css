@@ -112,14 +112,14 @@ h2 { margin: 0 0 10px 0; font-weight: 400; font-size: 20px; }
 .quote { font-size: 16px; font-style: italic; margin-bottom: 20px; }
 
 .maintext {
-font-family: 'Bebas Neue', sans-serif;
-font-size: 17px;
-line-height: 1.6;
-font-weight: 400;
-letter-spacing: 1px;
-max-width: 650px;
-margin: 24px auto;
-color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  max-width: 650px;
+  margin: 24px auto;
+  color: var(--text);
 }
 
 /* Social links */
