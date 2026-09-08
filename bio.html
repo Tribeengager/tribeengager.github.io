@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribe Engager - Techno DJ</title>
+
+  <meta name="description" content="Techno DJ driven by rhythm, guided by unity">
+  <link rel="canonical" href="https://www.tribeengager.com" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tribe Engager - Techno DJ" />
+  <meta property="og:description" content="Techno DJ driven by rhythm, guided by unity" />
+  <meta property="og:image" content="https://www.tribeengager.com/tribe-engager.jpg" />
+  <meta property="og:url" content="https://www.tribeengager.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Font: Bebas Neue -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <main class="card">
+    
+  <div class="menu">
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <label for="menu-toggle" class="menu-button">
+      ☰
+    </label>
+  
+    <nav class="menu-content">
+      <a href="index.html">Homepage</a>
+      <a href="bio.html">Bio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+    <header>
+      <img src="Tribe-engager-logo.png" alt="Logo" class="header-logo">
+      <h1>Tribe Engager</h1>
+      <h2>Bio</h2>
+    </header>
+    <p class="maintext">Coming soon</p>
+
+    <ul class="links">
+      <li>
+        <span class="icon"><i class="fab fa-tiktok"></i></span>
+        <a href="https://www.tiktok.com/@tribe.engager" class="tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </li>
+      <li>
+        <span class="icon"><i class="fab fa-instagram"></i></span>
+        <a href="https://www.instagram.com/tribe_engager.mp3" class="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </li>
+      <li>
+        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+        <a href="https://www.facebook.com/tribeengager" class="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </li>
+    </ul>
+
+    <nav class="alt-links">
+      <a href="https://www.mixcloud.com/TribeEngager/" target="_blank" rel="noopener noreferrer">Mixcloud</a>
+      <a href="https://soundcloud.com/tribeengager" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+    </nav>
+
+    <footer>
+      <p>All rights reserved • © <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
