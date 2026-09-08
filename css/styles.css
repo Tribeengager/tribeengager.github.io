@@ -8,7 +8,7 @@
 }
 /* Reset & base */
 * { box-sizing: border-box; }
-html, body { min-height: 100%; margin: 0; }
+html, body { height: 100%; margin: 0; }
 body {
   min-height: 100vh;
   background-image: url('../background.jpg');
@@ -19,7 +19,7 @@ body {
   color: var(--text);
   font-family: 'Bebas Neue', cursive;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
