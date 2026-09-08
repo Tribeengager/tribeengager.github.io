@@ -8,15 +8,16 @@
 }
 /* Reset & base */
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; }
+html, body { min-height: 100%; margin: 0; }
 body {
+  min-height: 100vh;
   background-image: url('../background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   color: var(--text);
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
