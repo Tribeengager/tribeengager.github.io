@@ -141,7 +141,7 @@ h2 { margin: 0 0 10px 0; font-weight: 400; font-size: clamp(16px, 2.5vw, 24px); 
   color: var(--text);
 }
 
-.email-link {
+.link-style {
   color: #ccc;
 }
 
